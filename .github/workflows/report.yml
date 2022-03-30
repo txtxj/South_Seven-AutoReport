@@ -33,5 +33,7 @@ jobs:
         EMER_PERSON: ${{ secrets.Emer_person }}
         EMER_RELA: ${{ secrets.Emer_rela }}
         EMER_PHONE: ${{ secrets.Emer_phone }}
+        DORM_BUILDING: ${{ secrets.DORM_BUILDING }}
+        DORM : ${{ secrets.DORM }}
       run: |
-        python report.py data_atschool.json "$STUID" "$PASSWORD" "$EMER_PERSON" "$EMER_RELA" "$EMER_PHONE"
+        python report.py data_atschool.json "$STUID" "$PASSWORD" "$EMER_PERSON" "$EMER_RELA" "$EMER_PHONE" "$DORM_BUILDING" "$DORM"
